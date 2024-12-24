@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Основная тема приложения -->
+    <style name="Theme.KeypadApp" parent="Theme.MaterialComponents.DayNight">
+        <!-- Основной цвет -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryVariant">@color/colorPrimaryDark</item>
+        <!-- Цвет акцента -->
+        <item name="colorSecondary">@color/colorAccent</item>
+        <!-- Шрифт для всех текстов -->
+        <item name="android:fontFamily">sans-serif</item>
+        <!-- Применение стиля для всех кнопок -->
+        <item name="buttonStyle">@style/RoundedButton</item>
+    </style>
+
+    <!-- Стиль кнопок -->
+    <style name="RoundedButton" parent="Widget.MaterialComponents.Button">
+        <!-- Закругленные углы -->
+        <item name="shapeAppearance">@style/ButtonShape</item>
+        <!-- Высота кнопок -->
+        <item name="android:layout_height">48dp</item>
+        <!-- Цвет фона кнопок -->
+        <item name="android:backgroundTint">@color/colorPrimary</item>
+    </style>
+
+    <!-- Форма кнопок -->
+    <style name="ButtonShape" parent="ShapeAppearance.MaterialComponents">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">12dp</item>
+    </style>
+
+</resources>
